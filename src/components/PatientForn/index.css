@@ -1,0 +1,146 @@
+.patient-form-bg-container{
+    height: 100vh;
+    width: 80vw;
+}
+.test-containers .daignosis-container h3:first-child {
+  margin-top: 0;
+}
+.fixed-block{
+    height: 20vh;
+    border: solid red;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.test-containers{
+    display: flex;
+}
+.visit-code-container{
+    width: 33%;
+    border: solid black;
+    /* height: 57vh; */
+}
+.daignosis-container{
+    width: 33%;
+    border: solid black;
+}
+.rxorder-container{
+    width: 33%;
+    border: solid black;
+}
+.bottom-container{
+    height: 10vh;
+    border: solid blue;
+}
+.footer-container{
+    display: flex;
+    align-items: center;
+}
+.hr-line{
+    width: 250px;
+    border: solid 1px black;
+    margin-left: 0px;
+    margin-top: 25px;
+    margin-right: 10px;
+}
+
+/*new Css*/
+
+/* .app-bg-container {
+    padding: 20px;
+  }
+  
+  .patient-form-bg-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .sortable-item {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .test-containers {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .visit-code-container, .diagnosis-container, .rxorder-container {
+    flex: 1;
+    min-height: 200px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+   */
+
+   /* App.css or index.css */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+   
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  /* .draggable-item {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    width: calc(33.333% - 20px); 
+    max-width: 100px; 
+    text-align: center;
+    cursor: grab;
+  } */
+  
+  .visit-code-grid .draggable-item {
+    background-color: white;
+    padding:8px 8px ;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 4px 0;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: inherit;
+    width: auto;
+    cursor: pointer;
+}
+.visit-code-container{
+  padding: 6px;
+
+}
+.visit-code-container h3.title {
+  padding-left: 9px;
+  margin-top: 7px;
+}
+.visit-code-grid .item {
+  display: inline-block;
+  padding: 0 5px;
+}
+.test-containers .daignosis-container {
+  padding: 10px;
+}
+.test-containers .rxorder-container {
+  padding: 10px;
+}
+.test-containers .rxorder-container h3 {
+  margin-top: 0;
+}
+.droppable-container {
+    min-height: 100px;
+    flex-grow: 1;
+    width: 100%;
+}
+  

@@ -1,0 +1,29 @@
+.labelName {
+    font-size: 20px;
+}
+
+.container {
+    width: 30vw ; /* or a fixed width based on your design */
+    /* background-color: red; */
+    overflow: hidden; /* Prevent overflow of draggable items */
+    display: flex; /* Ensure items align in a row if you want */
+    
+    
+}
+
+.draggable-item {
+    background-color: white ; /* Light background color */
+    padding: 8px 12px; /* Padding around the text */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    margin: 4px 0; /* Space between items */
+    display: flex; /* Use flex to allow dynamic width based on content */
+    align-items: center; /* Center items vertically */
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Show ellipsis (...) for overflow text */
+    min-width: 100px; /* Minimum width for items */
+    width: auto; /* Auto width to adjust based on content */
+    /* max-width: calc(100% - 24px); Prevent the item from exceeding its parent container */
+    /* box-sizing: border-box; Include padding and border in width */
+}
