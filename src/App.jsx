@@ -3,7 +3,7 @@ import PatientForm from './components/PatientForn'
 const App = () => {
   return(
     <div className="app-bg-container">
-      <PatientForm/>
+      <PatientForm />
     </div>
   )
 }

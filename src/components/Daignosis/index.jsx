@@ -39,33 +39,56 @@ const CoMorbidDiagnosis = [
 const Diagnosis = () => {
   return (
     <div>
-      <h3>Diagnosis</h3>
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
+      <h3 className='visitcode-title'>Diagnosis</h3>
+      <div className='check-box-area'>
         {diagnosisList.map((diagnosis) => (
-          <div key={diagnosis.id}>
+          <div key={diagnosis.id} className='check-box-area-in'>
             <input type="checkbox" id={diagnosis.id} />
-            <label htmlFor={diagnosis.id} className="labelName">{diagnosis.name}</label>
+            <label htmlFor={diagnosis.id} >{diagnosis.name}</label>
           </div>
         ))}
       </div>
-      <h3>Co-Morbid Diagnosis</h3>
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
+      <h3 className='visitcode-title'>Co-Morbid Diagnosis</h3>
+      <div className='check-box-area'>
         {CoMorbidDiagnosis.map((item) => (
-          <div key={item.id}>
+          <div key={item.id}  className='check-box-area-in'>
             <input type="checkbox" id={item.id} />
             <label htmlFor={item.id}>{item.name}</label>
           </div>
         ))}
       </div>
-      <h3>Follow Up</h3>
-      <input type="checkbox" id="2weeks"/>
-      <label htmlFor="2weeks">2 Weeks</label>
-      <input type="checkbox" id="3months"/>
-      <label htmlFor="3months">3 Months</label>
-      <input type="checkbox" id="6months"/>
-      <label htmlFor="6months">6 Months</label>
+      <div className='check-box-area'>
+      <h3 className='visitcode-title'>Follow Up</h3>
+<div className='check-box-area-in'>
+  <input type="checkbox" id="2weeks" />
+  <label htmlFor="2weeks">2 Weeks</label>
+</div>
+<div className='check-box-area-in'>
+  <input type="checkbox" id="3months" />
+  <label htmlFor="3months">3 Months</label>
+</div>
+<div className='check-box-area-in'>
+  <input type="checkbox" id="6months" />
+  <label htmlFor="6months">6 Months</label>
+</div>
+</div>
     </div>
   );
 }
 
 export default Diagnosis;
+
+{/* <div className='check-box-area'>
+<div key={item.id} className='check-box-area-in'>
+  <input type="checkbox" id="2weeks" />
+  <label htmlFor="2weeks">2 Weeks</label>
+</div>
+<div key={item.id} className='check-box-area-in'>
+  <input type="checkbox" id="3months" />
+  <label htmlFor="3months">3 Months</label>
+</div>
+<div key={item.id} className='check-box-area-in'>
+  <input type="checkbox" id="6months" />
+  <label htmlFor="6months">6 Months</label>
+</div>
+</div> */}

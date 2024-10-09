@@ -8,7 +8,6 @@
     overflow: hidden; /* Prevent overflow of draggable items */
     display: flex; /* Ensure items align in a row if you want */
     
-    
 }
 
 .draggable-item {
@@ -26,4 +25,50 @@
     width: auto; /* Auto width to adjust based on content */
     /* max-width: calc(100% - 24px); Prevent the item from exceeding its parent container */
     /* box-sizing: border-box; Include padding and border in width */
+}
+/* .visitcode-title{
+    margin-top: 10px;
+}
+.visitCode-tests-container{
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+
+
+.visitcode-title {
+    margin-top: 10px;
+}
+
+.visitCode-tests-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Add some spacing between test cases */
+}
+
+.visitCode-tests-container div {
+    flex: 1 1 ;
+    min-width: 48%; /*Set a minimum width to help control wrapping*/
+    /* border: solid red; */
+}
+/**/
+.check-box-area .check-box-area-in {
+    display: inline-block;
+    padding: 5px;
+}
+.check-box-area .check-box-area-in input {
+    margin: 0;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.check-box-area .check-box-area-in label {
+    vertical-align: middle;
+    padding-left: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.visitcode-title {
+    margin: 10px 5px;
 }

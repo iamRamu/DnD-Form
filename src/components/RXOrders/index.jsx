@@ -29,23 +29,22 @@ const Labs = [
   { id: '11', name: 'Vascular/UFE' }
 ];
 
-
 const RXOrders = () => {
   return (
-    <div>
-      <h3>RX Orders</h3>
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
+<div className='check-box-area'>
+      <h3 className='visitcode-title'>RX Orders</h3>
+      <div>
         {rxOrdersList.map((medication) => (
-          <div key={medication.id}>
+          <div key={medication.id} className='check-box-area-in'>
             <input type="checkbox" id={medication.id} />
             <label htmlFor={medication.id}>{medication.name}</label>
           </div>
         ))}
       </div>
-      <h3>Labs</h3>
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
+      <h3 className='visitcode-title'>Labs</h3>
+      <div>
         {Labs.map((lab) => (
-          <div key={lab.id}>
+          <div key={lab.id} className='check-box-area-in'>
             <input type="checkbox" id={lab.id} />
             <label htmlFor={lab.id}>{lab.name}</label>
           </div>
@@ -54,8 +53,8 @@ const RXOrders = () => {
       <div style={{height:"30px"}}>
 
       </div>
-      <span className="span-element">HT________________</span>
-      <span className="span-element">WT________________</span>
+      <span className="span-element">HT_________</span>
+      <span className="span-element">WT_________</span>
     </div>
   );
 }
